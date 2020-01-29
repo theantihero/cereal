@@ -334,12 +334,12 @@ struct CarParams {
   brakeMaxV @16 :List(Float32);
 
   # things about the car in the manual
-  mass @17 :Float32;             # [kg] running weight
-  wheelbase @18 :Float32;        # [m] distance from rear to front axle
+  mass @17 :Float32;            # [kg] running weight
+  wheelbase @18 :Float32;       # [m] distance from rear to front axle
   centerToFront @19 :Float32;   # [m] GC distance to front axle
-  steerRatio @20 :Float32;       # [] ratio between front wheels and steering wheel angles
+  steerRatio @20 :Float32;      # [] ratio between front wheels and steering wheel angles
   steerRatioRear @21 :Float32;  # [] rear steering ratio wrt front steering (usually 0)
-  steerRatioV @48;               # [] rate of change of steerRatio per degree of wheel rotation for variable ratio vehicles
+  steerRatioV @48; :Float32;    # [] rate of change of steerRatio per degree of wheel rotation for variable ratio vehicles
 
   # things we can derive
   rotationalInertia @22 :Float32;    # [kg*m2] body rotational inertia
