@@ -109,6 +109,8 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     belowEngageSpeed @84;
     noGps @85;
     focusRecoverActive @86;
+    wrongCruiseMode @87;
+    neosUpdateRequired @88;
   }
 }
 
